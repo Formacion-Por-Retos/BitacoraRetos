@@ -7,11 +7,22 @@ $datepicker = $_POST['datepicker'];
 $proyecto = $_POST['proyecto'];
 $descripcion = $_POST['descripcion'];
 
-$query = "insert into Actividades (nombre, fecha, usuario, proyecto, descripcion) values ('$nombre','$datepicker','$id','$proyecto','$descripcion')";
+if(!isset($id)) {
+    header("location: ../login_View.php");
 
-if (mysqli_query($conexion, $query)) {
-    echo "Se ha registrado la actividad.";
-} else {
-    echo "Error: " . $query . "<br>" . mysqli_error($conexion);
 }
-mysqli_close($conexion);
+
+else {
+
+    $query = "insert into Actividades (nombre, fecha, usuario, proyecto, descripcion) values ('$nombre','$datepicker','$id','$proyecto','$descripcion')";
+
+    if (mysqli_query($conexion, $query)) {
+        echo "Se ha registrado la actividad.";
+    } else {
+        echo "Error: " . $query . "<br>" . mysqli_error($conexion);
+    }
+    mysqli_close($conexion);
+
+
+}
+
