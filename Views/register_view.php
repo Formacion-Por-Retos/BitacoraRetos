@@ -20,7 +20,7 @@
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav ml-auto text-uppercase">
-                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">INICIO</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../index.php">INICIO</a></li>
             </ul>
         </div>
     </div>
