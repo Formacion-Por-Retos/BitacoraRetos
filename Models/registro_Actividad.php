@@ -8,7 +8,7 @@ $proyecto = $_POST['proyecto'];
 $descripcion = $_POST['descripcion'];
 
 if(!isset($id)) {
-    header("location: ../login_View.php");
+    header("location: ../Views/login_View.php");
 
 }
 

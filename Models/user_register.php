@@ -23,12 +23,16 @@ if($parametros['contar']>0) {
     echo "<a href='../Views/register_view.php'>";
     echo "<button>Volver</button>";
     echo "</a>";
+
+
 }
 else {
 
     if (mysqli_query($conexion, $query)) {
         echo "<script>alert('Se ha registrado exitosamente el usuario.');</script>";
+
         echo "<a href='../Views/login_View.php'>";
+
         echo "<button>Volver</button>";
         echo "</a>";
     } else {
