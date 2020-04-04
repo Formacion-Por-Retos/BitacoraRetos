@@ -17,8 +17,15 @@ if($parametros['contar']>0){
     $_SESSION['email'] = $email;
     $_SESSION['id'] = $id;
     $_SESSION['name'] = $name;
-    header("location: ../Actividades.php");
+    header("location: ../actividades_View.php");
 
 }else {
-    echo ("Contraseña incorrecta");
- }
+
+    echo "<script>alert('Contraseña incorrecta o usuario no existe.');</script>";
+
+    echo "<a href='../login_View.php'>";
+        echo "<button>Volver</button>";
+            echo "</a>";
+
+
+}

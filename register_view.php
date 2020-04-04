@@ -11,7 +11,7 @@
 <body>
 
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #0F385A;" id="mainNav">
+<nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #0F385A;" id="mainNav">
     <div class="container">
         <a href="#" class="navbar-brand">
             <img src="Assets/img/retos.png" width="120" height="45">
@@ -35,27 +35,44 @@
                         <div class="row justify-content-center">
                             <div class="col-md-8">
                                 <div class="card">
-                                    <div class="card-header">Inicio de Sesión</div>
+                                    <div class="card-header">Registro de Usuario</div>
                                     <div class="card-body">
-                                        <form action="Models/auth_user.php" method="POST">
+                                        <form action="Models/user_register.php" method="POST">
+
 
                                             <div class="form-group row">
-                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo</label>
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Nombre completo:</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="name" class="form-control" name="name" required autofocus>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Codigo:</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="codigo" class="form-control" name="codigo" required autofocus>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo:</label>
                                                 <div class="col-md-6">
                                                     <input type="text" id="email" class="form-control" name="email" required autofocus>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
+                                                <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña:</label>
                                                 <div class="col-md-6">
                                                     <input type="password" id="password" class="form-control" name="password" required>
                                                 </div>
                                             </div>
 
+
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                                                <a href="register_view.php" class="btn btn-link">¿Nuevo usuario?</a>
+                                                <button type="submit" class="btn btn-success">Registrarse</button>
                                             </div>
                                     </div>
                                     </form>
@@ -66,10 +83,7 @@
             </div>
 
             </main>
-            </div>
         </div>
     </div>
+    </div>
 </section>
-
-
-
