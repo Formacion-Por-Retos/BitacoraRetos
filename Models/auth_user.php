@@ -23,7 +23,7 @@ if($parametros['contar']>0){
 
     echo "<script>alert('Contraseña incorrecta o usuario no existe.');</script>";
 
-    echo "<a href='../login_View.php'>";
+    echo "<a href='../Views/login_View.php'>";
         echo "<button>Volver</button>";
             echo "</a>";
 
