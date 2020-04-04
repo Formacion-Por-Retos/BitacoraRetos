@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -9,8 +8,6 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-
-
 <main class="login-form">
     <div class="cotainer">
         <div class="row justify-content-center">
@@ -18,7 +15,7 @@
                 <div class="card">
                     <div class="card-header">Inicio de Sesión</div>
                     <div class="card-body">
-                        <form action="Models/Login.php" method="POST">
+                        <form action="Models/auth_user.php" method="POST">
                             <div class="form-group row">
                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo</label>
                                 <div class="col-md-6">

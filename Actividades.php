@@ -11,7 +11,7 @@
 <body>
 
 <?php
-include('Models/userSesion.php');
+include('Models/user_Sesion.php');
 ?>
 <br>
 <br>
@@ -23,7 +23,7 @@ include('Models/userSesion.php');
                     <div class="card-header">Registro de Actividades:</div>
                     <div class="card-body">
 
-                        <form action="Models/RegistroActividad.php" method="POST">
+                        <form action="Models/registro_Actividad.php" method="POST">
 
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Nombre de la Actividad:</label>
