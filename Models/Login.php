@@ -28,7 +28,7 @@ if($parametros['contar']>0){
     $_SESSION['name'] = $name;
 
 
-    header("location: Actividades.php");
+    header("location: ../Actividades.php");
 
 }else {
     echo ("Contraseña incorrecta");

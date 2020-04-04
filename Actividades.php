@@ -1,15 +1,3 @@
-
-<?php
-session_start();
-$email = $_SESSION['email'];
-$id = $_SESSION['id'];
-$name = $_SESSION['name'];
-
-echo "Bienvenido al registro de Actividades $name $id";
-
-?>
-<br>
-<br>
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +10,11 @@ echo "Bienvenido al registro de Actividades $name $id";
 </head>
 <body>
 
-
+<?php
+include('Models/userSesion.php');
+?>
+<br>
+<br>
 <main class="login-form">
     <div class="container">
         <div class="row justify-content-center">
@@ -31,11 +23,12 @@ echo "Bienvenido al registro de Actividades $name $id";
                     <div class="card-header">Registro de Actividades:</div>
                     <div class="card-body">
 
-                        <form action="RegistroActividad.php" method="POST">
+                        <form action="Models/RegistroActividad.php" method="POST">
 
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Nombre de la Actividad:</label>
-                                <input type="nombreactividad" class="form-control"  id="nombre" name="nombre" placeholder="Actividad">
+                                <input type="nombreactividad" class="form-control" id="nombre" name="nombre"
+                                       placeholder="Actividad">
                             </div>
 
                             <div class="form-group">
@@ -46,7 +39,6 @@ echo "Bienvenido al registro de Actividades $name $id";
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1">Seleccione el Proyecto:</label>
                                 <select class="form-control" id="proyecto" name="proyecto" ">
-
                                 <option value='1'>GoPoli</option>
                                 <option value='2'>Apps mamás</option>
                                 <option value='3'>Divulgación Retos</option>
@@ -62,9 +54,9 @@ echo "Bienvenido al registro de Actividades $name $id";
 
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Descripción de la Actividad</label>
-                                    <textarea class="form-control" id="descripcion" name="descripcion"  rows="3"></textarea>
+                                    <textarea class="form-control" id="descripcion" name="descripcion"
+                                              rows="3"></textarea>
                                 </div>
-
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-danger">Registrar Actividad</button>
                                 </div>
@@ -77,11 +69,9 @@ echo "Bienvenido al registro de Actividades $name $id";
         </div>
     </div>
     </div>
-
 </main>
-
 <script>
-    $(function() {
+    $(function () {
         $("#datepicker").datepicker({dateFormat: 'yyyy-mm-dd'});
     });
 </script>

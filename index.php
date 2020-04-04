@@ -18,7 +18,7 @@
                 <div class="card">
                     <div class="card-header">Inicio de Sesión</div>
                     <div class="card-body">
-                        <form action="Login.php" method="POST">
+                        <form action="Models/Login.php" method="POST">
                             <div class="form-group row">
                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo</label>
                                 <div class="col-md-6">
