@@ -29,7 +29,7 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12">
                 <main class="login-form">
                     <div class="cotainer">
                         <div class="row justify-content-center">
