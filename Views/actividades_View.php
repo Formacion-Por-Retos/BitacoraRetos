@@ -52,17 +52,17 @@
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Nombre de la Actividad:</label>
                                                 <input type="nombreactividad" class="form-control" id="nombre" name="nombre"
-                                                       placeholder="Actividad">
+                                                       placeholder="Actividad" required>
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="exampleFormControlInput1">Fecha de Registro:</label>
-                                                <input type="date" id="datepicker" name="datepicker" ">
+                                                <input type="date" id="datepicker" name="datepicker" required>
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Seleccione el Proyecto:</label>
-                                                <select class="form-control" id="proyecto" name="proyecto" ">
+                                                <select class="form-control" id="proyecto" name="proyecto" required>
                                                 <option value='1'>GoPoli</option>
                                                 <option value='2'>Apps mamás</option>
                                                 <option value='3'>Divulgación Retos</option>
@@ -78,8 +78,7 @@
 
                                                 <div class="form-group">
                                                     <label for="exampleFormControlTextarea1">Descripción de la Actividad</label>
-                                                    <textarea class="form-control" id="descripcion" name="descripcion"
-                                                              rows="3"></textarea>
+                                                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
                                                 </div>
                                                 <div class="col-md-6 offset-md-4">
                                                     <button type="submit" class="btn btn-danger">Registrar Actividad</button>
