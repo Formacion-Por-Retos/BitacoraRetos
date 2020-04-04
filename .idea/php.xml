@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="" />
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
     </include_path>
   </component>
 </project>

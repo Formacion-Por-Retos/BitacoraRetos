@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="Assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="Assets/css/Team-Clean.css">
 </head>
-<body>
-<main class="login-form">
-    <div class="cotainer">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Inicio de Sesión</div>
-                    <div class="card-body">
-                        <form action="Models/auth_user.php" method="POST">
-                            <div class="form-group row">
-                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo</label>
-                                <div class="col-md-6">
-                                    <input type="text" id="email" class="form-control" name="email" required autofocus>
-                                </div>
-                            </div>
 
-                            <div class="form-group row">
-                                <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
-                                <div class="col-md-6">
-                                    <input type="password" id="password" class="form-control" name="password" required>
-                                </div>
-                            </div>
+<style>
+    table tr:nth-child(even) {
+        background-color: ;
+    }
+    table tr:nth-child(odd) {
+        background-color: #1FB2DE;
+        color: white;
+    }
+    table th {
+        border-collapse: collapse;
+        background-color: #0F385A;
+        color: white;
+    }
+    th, td {
+        padding: 15px;
+    }
+</style>
 
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                                <a href="#" class="btn btn-link">Nuevo usuario?</a>
-                            </div>
-                    </div>
-                    </form>
+<body id="page-top">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="Assets/img/poli.png" width="200" height="60">
+            </a>
+            <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">INICIO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('Assets/img/header-bg.jpg');">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><span data-aos="fade">Bienvenido a</span></div>
+                <div class="intro-heading text-uppercase"><span data-aos="fade-up">Formación por Retos</span></div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true" href="login_View.php">Iniciar sesión</a></div>
+        </div>
+    </header>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Actividades</ h2>
+                    <h3 class="text-muted section-subheading">El registro de Actividades está ahora disponible.</h3>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
 
-</main>
+    <div align="center">
+        <a href="https://info.flagcounter.com/aNmd"><img src="https://s11.flagcounter.com/count2/aNmd/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Desarrollado por Formación Retos.</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="Assets/js/agency.js"></script>
+</body>
+</html>
