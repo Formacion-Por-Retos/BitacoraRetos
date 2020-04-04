@@ -36,7 +36,7 @@
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
         <div class="container">
             <a href="#" class="navbar-brand">
-                <img src="Assets/img/poli.png" width="200" height="60">
+                <img src="Assets/img/retos.png" width="120" height="45">
             </a>
             <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -54,6 +54,8 @@
                 <div class="intro-heading text-uppercase"><span data-aos="fade-up">Formación por Retos</span></div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" data-aos="zoom-in" data-aos-delay="150" data-aos-once="true" href="login_View.php">Iniciar sesión</a></div>
         </div>
     </header>
+
+
     <section id="services">
         <div class="container">
             <div class="row">
