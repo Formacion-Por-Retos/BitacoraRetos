@@ -55,6 +55,14 @@
                                             </div>
 
 
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Rol:</label>
+                                                <div class="col-md-6">
+                                                    <select class="form-control" id="rol" name="rol" required>
+                                                        <option value='1'>Estudiante</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
                                             <div class="form-group row">
                                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo:</label>
@@ -62,6 +70,7 @@
                                                     <input type="text" id="email" class="form-control" name="email" required autofocus>
                                                 </div>
                                             </div>
+
 
                                             <div class="form-group row">
                                                 <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña:</label>
