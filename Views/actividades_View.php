@@ -121,7 +121,7 @@
                                                 <input type="evidencia" class="form-control" id="evidencia"
                                                        name="evidencia"
                                                        placeholder="Inserte aquí un enlace de la evidencia de la actividad realizada."
-                                                       required>
+                                                       >
                                             </div>
 
 
