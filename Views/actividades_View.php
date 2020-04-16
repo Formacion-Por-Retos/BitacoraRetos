@@ -86,17 +86,6 @@
 
 
                                             <div class="form-group">
-                                                <label for="exampleFormControlSelect1">Profesor Encargado:</label>
-                                                <select class="form-control" id="encargado" name="encargado" required>
-                                                    <option value='1'>Cesar Quiñonez</option>
-                                                    <option value='2'>Emiliano</option>
-                                                    <option value='3'>Javier Niño</option>
-                                                    <option value='4'>Edwin Niño</option>
-                                                </select>
-
-                                            </div>
-
-                                            <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Seleccione la duración:</label>
                                                 <select class="form-control" id="duracion" name="duracion" required>
                                                     <option>00:15 Hr.</option>

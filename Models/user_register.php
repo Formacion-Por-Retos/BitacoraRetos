@@ -8,7 +8,7 @@ $email= $_POST['email'];
 $password = $_POST['password'];
 $rol = $_POST['rol'];
 
-$query = "INSERT INTO Users (email, password, name, codigo, rol) VALUES ('$email','$password', '$name','$codigo', '$rol')";
+$query = "INSERT INTO Users (email, password, name, codigo, rol) VALUES ('$email','$password', UPPER('$name'),'$codigo', '$rol')";
 
 $query2 = "SELECT COUNT(*) as contar,id,name from Users where email = '$email'";
 
