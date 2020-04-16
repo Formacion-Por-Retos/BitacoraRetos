@@ -33,20 +33,30 @@
 </style>
 
 <body id="page-top">
+
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="Assets/img/retos.png" width="120" height="45">
             </a>
+
+
             <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto text-uppercase">
                     <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.php">INICIO</a></li>
+
+
                 </ul>
             </div>
         </div>
     </nav>
+
+
+
+
     <header class="masthead" style="background-image:url('Assets/img/header-bg.jpg');">
         <div class="container">
             <div class="intro-text">
