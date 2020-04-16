@@ -1,7 +1,6 @@
 <?php
-require 'conexion_db.php';
+require '../conexion_db.php';
 
-session_start();
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -16,11 +15,12 @@ $name = $parametros['name'];
 
 if($parametros['contar']>0){
 
+    session_start();
     $_SESSION['email'] = $email;
     $_SESSION['id'] = $id;
     $_SESSION['name'] = $name;
 
-    header("location: ../Views/actividades_View.php");
+    header("location: ../Views/home_select.php");
 
 }else {
 

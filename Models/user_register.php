@@ -1,6 +1,6 @@
 <?php
 
-require 'conexion_db.php';
+require '../conexion_db.php';
 
 $name = $_POST['name'];
 $codigo = $_POST['codigo'];
@@ -17,14 +17,12 @@ $bdconect = mysqli_query($conexion,$query2);
 $parametros = mysqli_fetch_array($bdconect);
 
 
-if($parametros['contar']>0) {
 
+if($parametros['contar']>0) {
     echo "<script>alert('El usuario ya existe el sistema.');</script>";
     echo "<a href='../Views/register_view.php'>";
     echo "<button>Volver</button>";
     echo "</a>";
-
-
 }
 else {
 

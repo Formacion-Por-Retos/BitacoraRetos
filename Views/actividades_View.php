@@ -21,7 +21,7 @@
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav ml-auto text-uppercase">
-                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../index.php">INICIO</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Views/home_select.php">INICIO</a>
                 <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Models/logout.php">CERRAR SESION</a></li>
 
             </ul>
@@ -35,14 +35,13 @@
         <div class="row">
             <div class="col-lg-12">
                 <main class="login-form">
-                    <?php
-                    include('../Models/user_Sesion.php');
-                    ?>
                     <br>
                     <br>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8">
+
+
                                 <div class="card">
                                     <div class="card-header">Registro de Actividades:</div>
                                     <div class="card-body">
@@ -67,13 +66,13 @@
                                                 <option value='2'>Apps mamás</option>
                                                 <option value='3'>Divulgación Retos</option>
                                                 <option value='4'>Effie</option>
-                                                <option value='5'>Hackathon Fidi</option>
-                                                <option value='6'>Laboratorios remotos</option>
-                                                <option value='7'>Podcast</option>
-                                                <option value='8'>Salones</option>
-                                                <option value='9'>Telepizza</option>
-                                                <option value='10'>Tienda Poli</option>
-                                                <option value='11'>Ángeles azules</option>
+                                                    <option value='5'>Hackathon Fidi</option>
+                                                    <option value='6'>Laboratorios remotos</option>
+                                                    <option value='7'>Podcast</option>
+                                                    <option value='8'>Salones</option>
+                                                    <option value='9'>Telepizza</option>
+                                                    <option value='10'>Tienda Poli</option>
+                                                    <option value='11'>Ángeles azules</option>
                                                     <option value='12'>Bitácora Retos</option>
                                                     <option value='13'>Reunión General</option>
                                                     <option value='14'>ProCAT</option>
@@ -86,60 +85,73 @@
                                             </div>
 
 
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlSelect1">Profesor Encargado:</label>
-                                                    <select class="form-control" id="encargado" name="encargado" required>
-                                                        <option value='1'>Cesar Quiñonez</option>
-                                                        <option value='2'>Emiliano</option>
-                                                        <option value='3'>Javier Niño</option>
-                                                        <option value='4'>Edwin Niño</option>
-                                                    </select>
-
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlSelect1">Seleccione la duración:</label>
-                                                    <select class="form-control" id="duracion" name="duracion" required>
-                                                        <option>00:15 Hr.</option>
-                                                        <option>00:30 Hr.</option>
-                                                        <option>01:00 Hr.</option>
-                                                        <option>01:30 Hr.</option>
-                                                        <option>02:00 Hr</option>
-                                                        <option>02:30 Hr.</option>
-                                                        <option>03:00 Hr.</option>
-                                                        <option>03:30 Hr.</option>
-                                                    </select>
-                                                </div>
-
-
-                                                    <div class="form-group">
-                                                    <label for="exampleFormControlTextarea1">Descripción de la Actividad</label>
-                                                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
-                                                </div>
-
-                                                    <div class="form-group">
-                                                        <label for="exampleFormControlInput1">Evidencia (Opcional): </label>
-                                                        <input type="evidencia" class="form-control" id="evidencia" name="evidencia"
-                                                               placeholder="Inserte aquí un enlace de la evidencia de la actividad realizada." required>
-                                                    </div>
-
-
-
-                                                <div class="col-md-6 offset-md-4">
-                                                    <button type="submit" class="btn btn-danger">Registrar Actividad</button>
-                                                </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Profesor Encargado:</label>
+                                                <select class="form-control" id="encargado" name="encargado" required>
+                                                    <option value='1'>Cesar Quiñonez</option>
+                                                    <option value='2'>Emiliano</option>
+                                                    <option value='3'>Javier Niño</option>
+                                                    <option value='4'>Edwin Niño</option>
+                                                </select>
 
                                             </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlSelect1">Seleccione la duración:</label>
+                                                <select class="form-control" id="duracion" name="duracion" required>
+                                                    <option>00:15 Hr.</option>
+                                                    <option>00:30 Hr.</option>
+                                                    <option>01:00 Hr.</option>
+                                                    <option>01:30 Hr.</option>
+                                                    <option>02:00 Hr</option>
+                                                    <option>02:30 Hr.</option>
+                                                    <option>03:00 Hr.</option>
+                                                    <option>03:30 Hr.</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="description">Participantes</label>
+
+                                                <?php
+                                                include "../test.php";
+                                                ?>
+
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Descripción de la
+                                                    Actividad</label>
+                                                <textarea class="form-control" id="descripcion" name="descripcion"
+                                                          rows="3" required></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Evidencia (Opcional): </label>
+                                                <input type="evidencia" class="form-control" id="evidencia"
+                                                       name="evidencia"
+                                                       placeholder="Inserte aquí un enlace de la evidencia de la actividad realizada."
+                                                       required>
+                                            </div>
+
+
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-danger">Registrar Actividad
+                                                </button>
+                                            </div>
+
                                     </div>
-                                    </form>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
             </div>
-            </main>
-            </main>
         </div>
+        </main>
+        </main>
+    </div>
     </div>
     </div>
 </section>

@@ -41,9 +41,9 @@
 
 
                                             <div class="form-group row">
-                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Nombre completo:</label>
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right"" >Nombre completo:</label>
                                                 <div class="col-md-6">
-                                                    <input type="text" id="name" class="form-control" name="name" required autofocus>
+                                                    <input type="text" id="name" class="form-control" name="name" required autofocus style="text-transform:uppercase">
                                                 </div>
                                             </div>
 
@@ -78,6 +78,7 @@
                                                     <input type="password" id="password" class="form-control" name="password" required>
                                                 </div>
                                             </div>
+
 
 
                                             <div class="col-md-6 offset-md-4">
