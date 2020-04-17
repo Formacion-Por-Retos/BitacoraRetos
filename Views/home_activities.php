@@ -56,7 +56,7 @@ include '../conexion_db.php';
                 <main class="login-form">
                     <div class="cotainer">
                         <div class="row justify-content-center">
-                            <div class="col-md-8">
+                            <div class="col-xs-7 col-sm-6 col-lg-8">
                                         <h1>Actividades</h1>
                                         <a href="../Views/actividades_View.php" class="btn btn-primary" >Registrar</a>
                                         <br>
@@ -64,7 +64,8 @@ include '../conexion_db.php';
 
 
                                 <div class="table-responsive">
-                                        <?php
+
+                                    <?php
                                         session_start();
                                         $id = $_SESSION['id'];
                                         $con = connect();
@@ -93,12 +94,13 @@ include '../conexion_db.php';
                                                         <td><?php echo $d->fecha; ?></td>
                                                         <td><?php echo $d->descripcion; ?></td>
                                                         <td>
+
                                                             <?php
                                                             $pcats = get_post_categorias($d->id);
                                                             if (count($pcats) > 0) {
                                                                 foreach ($pcats as $pc) {
                                                                     $c = get_categoria($pc->Users_id);
-                                                                    echo "<span class='badge badge-warning'>";
+                                                                    echo "<span class='badge badge-pill badge-primary'>";
                                                                     echo $c->name;
                                                                     echo "</span> ";
                                                                 }
@@ -110,7 +112,7 @@ include '../conexion_db.php';
                                                 <?php endforeach; ?>
                                             </table>
                                         <?php else: ?>
-                                            <p class="alert alert-warning">No hay datos</p>
+                                            <p class="alert alert-warning">No hay actividades registradas.</p>
                                         <?php endif; ?>
 
 

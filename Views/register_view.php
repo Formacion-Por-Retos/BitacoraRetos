@@ -73,6 +73,34 @@
                                                 </div>
                                             </div>
 
+
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Carrera:</label>
+                                                <div class="col-md-6">
+                                                <select class="form-control" id="carrera" name="carrera" required>
+                                                    <option value='1'>Diseño Gráfico</option>
+                                                    <option value='2'>Diseño de Modas</option>
+                                                    <option value='3'>Diseño Industrial</option>
+                                                    <option value='4'>Ingeniería Sistemas</option>
+                                                    <option value='5'>Ingeniería Industrial</option>
+                                                    <option value='6'>Ingeniería Telecomunicaciones</option>
+                                                    <option value='7'>Matemáticas</option>
+                                                    <option value='8'>Mercadeo y Publicidad</option>
+                                                    <option value='9'>Medios Audiovisuales</option>
+                                                    <option value='10'>Piscología</option>
+                                                    <option value='11'>Derecho</option>
+                                                    <option value='12'>Artes de la Escena</option>
+                                                    <option value='13'>Comunicación social</option>
+                                                    <option value='14'>Negocios internacionales</option>
+                                                    <option value='15'>Administración de empresas</option>
+                                                    <option value='16'>Contaduría pública </option>
+                                                    <option value='17'>Economía</option>
+                                                    <option value='18'>Administración hotelera y gastronómica</option>
+                                                </select>
+                                                </div>
+                                            </div>
+
+
                                             <div class="form-group row">
                                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo:</label>
                                                 <div class="col-md-6">

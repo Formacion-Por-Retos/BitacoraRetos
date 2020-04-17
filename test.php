@@ -10,4 +10,7 @@ $categorias = get_categorias();
             </label>
         </div>
     <?php endforeach; ?>
+    <input type='checkbox' onClick='toggle(this)'/>
+    <label for="vehicle1"> <span style="font-weight:bold">Seleccionar todos los participantes.</span></label><br>
+
 <?php endif; ?>

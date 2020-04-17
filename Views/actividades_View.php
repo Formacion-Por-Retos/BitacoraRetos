@@ -150,7 +150,18 @@
     $(function () {
         $("#datepicker").datepicker({dateFormat: 'yyyy-mm-dd'});
     });
+
+    function toggle(source) {
+        var aInputs = document.getElementsByTagName('input');
+        for (var i=0;i<aInputs.length;i++) {
+            if (aInputs[i] != source && aInputs[i].className == source.className) {
+                aInputs[i].checked = source.checked;
+            }
+        }
+    }
+
 </script>
+
 </body>
 </html>
 
