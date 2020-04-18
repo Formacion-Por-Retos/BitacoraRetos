@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://35.199.40.228:3306/bitacora</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="bitacoraretos" uuid="782ba6a2-8b87-4609-94f3-2137002c5ae1">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://un0jueuv2mam78uv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306</jdbc-url>
+    </data-source>
   </component>
 </project>
