@@ -142,7 +142,7 @@
 
 
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-danger">Registrar Actividad
+                                                <button type="submit" class="btn btn-outline-warning" onclick="this.disabled=true;this.value='Sending, please wait...';this.form.submit();">Registrar Actividad
                                                 </button>
                                             </div>
 
@@ -163,6 +163,7 @@
 
 
 <script>
+
     $(function () {
         $("#datepicker").datepicker({dateFormat: 'yyyy-mm-dd'});
     });

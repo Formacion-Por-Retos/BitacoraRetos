@@ -58,7 +58,7 @@
                                             </div>
 
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                                <button type="submit" class="btn btn-primary" onclick="this.disabled=true;this.value='Sending, please wait...';this.form.submit();">Iniciar Sesión</button>
                                                 <a href="register_view.php" class="btn btn-link">¿Nuevo usuario?</a>
                                             </div>
                                     </div>

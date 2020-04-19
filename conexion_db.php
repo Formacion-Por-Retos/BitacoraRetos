@@ -12,9 +12,8 @@ function connect()
 
 function get_categorias()
 {
-
     $con = connect();
-    $sql = "select id,name from Users";
+    $sql = "select id,name from Users ORDER BY name ";
     $query = $con->query($sql);
     $data = array();
     if ($query) {

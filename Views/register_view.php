@@ -119,7 +119,7 @@
 
 
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-success">Registrarse</button>
+                                                <button type="submit" class="btn btn-success" onclick="this.disabled=true;this.value='Sending, please wait...';this.form.submit();">Registrarse</button>
                                             </div>
                                     </div>
                                     </form>
