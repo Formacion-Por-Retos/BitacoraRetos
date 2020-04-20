@@ -18,6 +18,28 @@
     <link rel="stylesheet" href="../Assets/css/Team-Clean.css">
 
 </head>
+
+<style>
+    table tr:nth-child(even) {
+        background-color: ;
+    }
+    table tr:nth-child(odd) {
+        background-color: #1FB2DE;
+        color: white;
+    }
+    table th {
+        border-collapse: collapse;
+        background-color: #0F385A;
+        color: white;
+    }
+    th, td {
+        padding: 15px;
+    }
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+</style>
 <body>
 
 
@@ -49,6 +71,13 @@
                 include('../Models/user_Sesion.php');
                 ?>
         </div>
+            <br>
+            <br>
+            <div align="center">
+                <img src="https://i.imgur.com/sCkmBU7.png" alt="Nature" class="responsive">
+            </div>
+
+
         </main>
         </main>
     </div>

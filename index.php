@@ -50,6 +50,10 @@
     th, td {
         padding: 15px;
     }
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
 </style>
 
 <body id="page-top">
@@ -92,11 +96,14 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="text-uppercase section-heading">Actividades</h2>
                     <h3 class="text-muted section-subheading">El registro de Actividades está ahora disponible.</h3>
+                        <img src="https://i.imgur.com/AKDEViL.png" alt="Nature" class="responsive">
                 </div>
+
             </div>
 
-
-
+            <br>
+            <br>
+            <br>
 
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -104,6 +111,9 @@
                     <h3 class="text-muted section-subheading">Formación por Retos en redes sociales.</h3>
                 </div>
             </div>
+
+
+
 
 
 
