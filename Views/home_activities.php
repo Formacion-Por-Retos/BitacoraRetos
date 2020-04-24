@@ -87,6 +87,7 @@ include '../conexion_db.php';
                                                 <th>Descripción</th>
                                                 <th>Participantes</th>
                                                 <th>Evidencia</th>
+                                                <th>Eliminar</th>
                                                 </thead>
 
                                                 <?php foreach ($data as $d): ?>
@@ -109,6 +110,12 @@ include '../conexion_db.php';
                                                             ?>
                                                         </td>
                                                         <td><?php echo $d->evidencia; ?></td>
+
+                                                        <td>
+                                                            <a href="../Models/eliminar_actividad.php?id=<?php echo $d->id?>" class='btn btn-danger btn-xs'>Eliminar</a>
+                                                        </td>
+
+
                                                     </tr>
                                                 <?php endforeach; ?>
                                             </table>
