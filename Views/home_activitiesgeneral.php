@@ -42,9 +42,9 @@ include '../conexion_db.php';
                 <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Views/home_activitiesgeneral.php">ACTIVIDADES</a></li>
 
 
+
                 <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
                                                             href="../Models/logout.php">CERRAR SESION</a></li>
-
 
             </ul>
         </div>
@@ -62,8 +62,7 @@ include '../conexion_db.php';
                     <div class="cotainer">
                         <div class="row justify-content-center">
                             <div class="col-xs-7 col-sm-6 col-lg-8">
-                                        <h1>Actividades</h1>
-                                        <a href="../Views/actividades_View.php" class="btn btn-primary" >Registrar</a>
+                                        <h1>Actividades Creadas</h1>
                                         <br>
                                         <br>
 
@@ -74,7 +73,7 @@ include '../conexion_db.php';
                                         session_start();
                                         $id = $_SESSION['id'];
                                         $con = connect();
-                                        $sql = "select * from Actividades where usuario=$id ";
+                                        $sql = "select * from Actividades";
 
                                         $query = $con->query($sql);
                                         $data = array();
@@ -92,7 +91,6 @@ include '../conexion_db.php';
                                                 <th>Descripción</th>
                                                 <th>Participantes</th>
                                                 <th>Evidencia</th>
-                                                <th>Eliminar</th>
                                                 </thead>
 
                                                 <?php foreach ($data as $d): ?>
@@ -115,10 +113,6 @@ include '../conexion_db.php';
                                                             ?>
                                                         </td>
                                                         <td><?php echo $d->evidencia; ?></td>
-
-                                                        <td>
-                                                            <a href="../Models/eliminar_actividad.php?id=<?php echo $d->id?>" class='btn btn-danger btn-xs'>Eliminar</a>
-                                                        </td>
 
 
                                                     </tr>
