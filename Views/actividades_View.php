@@ -96,6 +96,11 @@
                                                     <option>02:30 Hr.</option>
                                                     <option>03:00 Hr.</option>
                                                     <option>03:30 Hr.</option>
+                                                    <option>04:00 Hr.</option>
+                                                    <option>04:30 Hr.</option>
+                                                    <option>05:00 Hr.</option>
+                                                    <option>05:30 Hr.</option>
+                                                    <option>06:00 Hr.</option>
                                                 </select>
                                             </div>
 

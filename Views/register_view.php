@@ -67,7 +67,7 @@
                                             <div class="form-group row">
                                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Rol:</label>
                                                 <div class="col-md-6">
-                                                    <select class="form-control" id="rol" name="rol" required>
+                                                    <select class="form-control" id="rol" name="rol" required autofocus>
                                                         <option value='1'>Estudiante</option>
                                                     </select>
                                                 </div>
@@ -77,7 +77,7 @@
                                             <div class="form-group row">
                                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Carrera:</label>
                                                 <div class="col-md-6">
-                                                <select class="form-control" id="carrera" name="carrera" required>
+                                                <select class="form-control" id="carrera" name="carrera" required autofocus>
                                                     <option value='1'>Diseño Gráfico</option>
                                                     <option value='2'>Diseño de Modas</option>
                                                     <option value='3'>Diseño Industrial</option>
@@ -112,10 +112,9 @@
                                             <div class="form-group row">
                                                 <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña:</label>
                                                 <div class="col-md-6">
-                                                    <input type="password" id="password" class="form-control" name="password" required>
+                                                    <input type="password" id="password" class="form-control" name="password" required autofocus>
                                                 </div>
                                             </div>
-
 
 
                                             <div class="col-md-6 offset-md-4">

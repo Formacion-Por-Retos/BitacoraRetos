@@ -70,6 +70,7 @@ include '../conexion_db.php';
                                         $id = $_SESSION['id'];
                                         $con = connect();
                                         $sql = "select * from Actividades where usuario=$id ";
+
                                         $query = $con->query($sql);
                                         $data = array();
                                         if ($query) {
