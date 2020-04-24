@@ -80,6 +80,9 @@
                                                     <option value='16'>Inaguración CityCampus</option>
                                                     <option value='17'>Cultura Retos</option>
                                                     <option value='18'>Redes Sociales</option>
+                                                    <option value='19'>Hackathon Retos</option>
+                                                    <option value='20'>Clases Retos</option>
+
                                                 </select>
 
                                             </div>
