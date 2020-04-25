@@ -4,7 +4,27 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Formación Por Retos 📚</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link rel="stylesheet" href="../Assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,8 +42,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav ml-auto text-uppercase">
                 <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Views/home_select.php">INICIO</a>
+                </li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="../Views/home_activities.php">MIS ACTIVIDADES</a></li>
+
                 <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Views/home_activitiesgeneral.php">ACTIVIDADES</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="../Models/logout.php">CERRAR SESION</a></li>
+
+
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+                                                            href="../Models/logout.php">CERRAR SESION</a></li>
 
             </ul>
         </div>
