@@ -87,7 +87,7 @@ include '../conexion_db.php';
                                         <br>
 
 
-                                <div class="table-responsive">
+
 
                                     <?php
                                         session_start();
@@ -142,7 +142,7 @@ include '../conexion_db.php';
                                         <?php endif; ?>
 
 
-                            </div>
+                            
                             </div>
                         </div>
                     </div>
