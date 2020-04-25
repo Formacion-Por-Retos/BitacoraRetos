@@ -78,7 +78,7 @@ include '../conexion_db.php';
                             session_start();
                             $id = $_SESSION['id'];
                             $con = connect();
-                            $sql = "select (50) from Actividades order by id DESC";
+                            $sql = "select * from Actividades order by id DESC LIMIT 50";
 
                             $query = $con->query($sql);
                             $data = array();
