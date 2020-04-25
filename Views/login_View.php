@@ -54,19 +54,24 @@
                                             <div class="form-group row">
                                                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo</label>
                                                 <div class="col-md-6">
-                                                    <input type="text" id="email" class="form-control" name="email" required autofocus>
+                                                    <input type="text" id="email" class="form-control" name="email"
+                                                           required autofocus>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
                                                 <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña</label>
                                                 <div class="col-md-6">
-                                                    <input type="password" id="password" class="form-control" name="password" required>
+                                                    <input type="password" id="password" class="form-control"
+                                                           name="password" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 offset-md-4">
-                                                <button type="submit" class="btn btn-primary" onclick="this.disabled=true;this.value='Sending, please wait...';this.form.submit();">Iniciar Sesión</button>
+                                                <button type="submit" class="btn btn-primary"
+                                                        onclick="this.disabled=true;this.value='Sending, please wait...';this.form.submit();">
+                                                    Iniciar Sesión
+                                                </button>
                                                 <a href="register_view.php" class="btn btn-link">¿Nuevo usuario?</a>
                                             </div>
                                     </div>
@@ -78,8 +83,8 @@
             </div>
 
             </main>
-            </div>
         </div>
+    </div>
     </div>
 </section>
 

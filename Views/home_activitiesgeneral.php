@@ -80,7 +80,7 @@ include '../conexion_db.php';
                                         session_start();
                                         $id = $_SESSION['id'];
                                         $con = connect();
-                                        $sql = "select * from Actividades";
+                                        $sql = "select * from Actividades order by id DESC";
 
                                         $query = $con->query($sql);
                                         $data = array();
