@@ -14,6 +14,7 @@ if(isset($_GET["id"])){
 	$con->query($sql);
 
 
+    header("Location: ../Views/home_activities.php");
 
 
 
