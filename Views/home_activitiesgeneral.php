@@ -73,68 +73,69 @@ include '../conexion_db.php';
                                         <br>
                                         <br>
 
-
-                                <div class="table-responsive">
-
-                                    <?php
-                                        session_start();
-                                        $id = $_SESSION['id'];
-                                        $con = connect();
-                                        $sql = "select * from Actividades order by id DESC";
-
-                                        $query = $con->query($sql);
-                                        $data = array();
-                                        if ($query) {
-                                            while ($r = $query->fetch_object()) {
-                                                $data[] = $r;
-                                            }
-                                        }
-                                        ?>
-                                        <?php if (count($data) > 0): ?>
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                <th>Nombre</th>
-                                                <th>Fecha</th>
-                                                <th>Descripción</th>
-                                                <th>Participantes</th>
-                                                <th>Evidencia</th>
-                                                </thead>
-
-                                                <?php foreach ($data as $d): ?>
-                                                    <tr>
-                                                        <td><?php echo $d->nombre; ?></td>
-                                                        <td><?php echo $d->fecha; ?></td>
-                                                        <td><?php echo $d->descripcion; ?></td>
-                                                        <td>
-
-                                                            <?php
-                                                            $pcats = get_post_categorias($d->id);
-                                                            if (count($pcats) > 0) {
-                                                                foreach ($pcats as $pc) {
-                                                                    $c = get_categoria($pc->Users_id);
-                                                                    echo "<span class='badge badge-pill badge-primary'>";
-                                                                    echo $c->name;
-                                                                    echo "</span> ";
-                                                                }
-                                                            }
-                                                            ?>
-                                                        </td>
-                                                        <td><?php echo $d->evidencia; ?></td>
-
-
-                                                    </tr>
-                                                <?php endforeach; ?>
-                                            </table>
-                                        <?php else: ?>
-                                            <p class="alert alert-warning">No hay actividades registradas.</p>
-                                        <?php endif; ?>
-
-
                             </div>
-                            </div>
+                        </div>
+
+
+                        <div class="table-responsive">
+                            <?php
+                            session_start();
+                            $id = $_SESSION['id'];
+                            $con = connect();
+                            $sql = "select * from Actividades order by id DESC";
+
+                            $query = $con->query($sql);
+                            $data = array();
+                            if ($query) {
+                                while ($r = $query->fetch_object()) {
+                                    $data[] = $r;
+                                }
+                            }
+                            ?>
+                            <?php if (count($data) > 0): ?>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <th>Nombre</th>
+                                    <th>Fecha</th>
+                                    <th>Descripción</th>
+                                    <th>Participantes</th>
+                                    <th>Evidencia</th>
+                                    </thead>
+
+                                    <?php foreach ($data as $d): ?>
+                                        <tr>
+                                            <td><?php echo $d->nombre; ?></td>
+                                            <td><?php echo $d->fecha; ?></td>
+                                            <td><?php echo $d->descripcion; ?></td>
+                                            <td>
+
+                                                <?php
+                                                $pcats = get_post_categorias($d->id);
+                                                if (count($pcats) > 0) {
+                                                    foreach ($pcats as $pc) {
+                                                        $c = get_categoria($pc->Users_id);
+                                                        echo "<span class='badge badge-pill badge-primary'>";
+                                                        echo $c->name;
+                                                        echo "</span> ";
+                                                    }
+                                                }
+                                                ?>
+                                            </td>
+                                            <td><?php echo $d->evidencia; ?></td>
+
+
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </table>
+                            <?php else: ?>
+                                <p class="alert alert-warning">No hay actividades registradas.</p>
+                            <?php endif; ?>
+
+
                         </div>
                     </div>
             </div>
+        </div>
 
             </main>
         </div>
