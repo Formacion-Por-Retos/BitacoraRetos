@@ -16,9 +16,11 @@ $name = $parametros['name'];
 if($parametros['contar']>0){
 
     session_start();
+
     $_SESSION['email'] = $email;
     $_SESSION['id'] = $id;
     $_SESSION['name'] = $name;
+
 
     header("location: ../Views/home_select.php");
 
