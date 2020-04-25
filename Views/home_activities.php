@@ -67,18 +67,14 @@ include '../conexion_db.php';
         <div class="row">
             <div class="col-lg-12">
                 <main class="login-form">
-                    <div class="cotainer">
+                    <div class="container">
 
-                        <div class="row justify-content-center">
-                            <div class="col-xs-7 col-sm-6 col-lg-8">
+                        <h1>Actividades</h1>
+                        <a href="../Views/actividades_View.php" class="btn btn-primary">Registrar</a>
+                        <br>
+                        <br>
 
-                                        <h1>Actividades</h1>
-                                        <a href="../Views/actividades_View.php" class="btn btn-primary" >Registrar</a>
-                                        <br>
-                                        <br>
-
-
-                                <div class="table-responsive">
+                        <div class="table-responsive">
 
                                     <?php
                                         session_start();
@@ -138,9 +134,6 @@ include '../conexion_db.php';
                                             <p class="alert alert-warning">No hay actividades registradas.</p>
                                         <?php endif; ?>
 
-
-                            </div>
-                            </div>
                         </div>
                     </div>
             </div>
