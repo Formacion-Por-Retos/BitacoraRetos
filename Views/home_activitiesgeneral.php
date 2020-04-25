@@ -66,15 +66,11 @@ include '../conexion_db.php';
         <div class="row">
             <div class="col-lg-12">
                 <main class="login-form">
-                    <div class="cotainer">
-                        <div class="row justify-content-center">
-                            <div class="col-xs-7 col-sm-6 col-lg-8">
+                    <div class="container">
+
                                         <h1>Actividades Creadas</h1>
                                         <br>
                                         <br>
-
-                            </div>
-                        </div>
 
 
                         <div class="table-responsive">
