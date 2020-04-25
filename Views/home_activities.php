@@ -81,6 +81,8 @@ include '../conexion_db.php';
                 <main class="login-form">
                     <div class="cotainer">
                         <div class="row justify-content-center">
+
+
                             <div class="col-xs-7 col-sm-6 col-lg-8">
                                         <h1>Actividades</h1>
                                         <a href="../Views/actividades_View.php" class="btn btn-primary" >Registrar</a>

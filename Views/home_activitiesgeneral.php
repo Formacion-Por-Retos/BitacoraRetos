@@ -87,8 +87,6 @@ include '../conexion_db.php';
                                         <br>
 
 
-
-
                                     <?php
                                         session_start();
                                         $con = connect();
@@ -142,7 +140,7 @@ include '../conexion_db.php';
                                         <?php endif; ?>
 
 
-                            
+
                             </div>
                         </div>
                     </div>
