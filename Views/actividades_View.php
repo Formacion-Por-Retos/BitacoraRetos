@@ -97,8 +97,9 @@
                                                     <option value='18'>Redes Sociales</option>
                                                     <option value='19'>Hackathon Retos</option>
                                                     <option value='20'>Clases Retos</option>
-                                                    <option value='20'>Caso PoliVirtual</option>
-                                                    <option value='21'>Procampo</option>
+                                                    <option value='21'>Caso PoliVirtual</option>
+                                                    <option value='22'>Procampo</option>
+                                                    <option value='23'>Seminario de Finanzas</option>
 
                                                 </select>
 
